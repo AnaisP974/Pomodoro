@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <!-- Icone -->
+     <link rel="shortcut icon" href="./asset/images/logo_anais_perigny_initials.png" type="image/png">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Style CSS -->
+     <link rel="stylesheet" href="./asset/css/style.min.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="./asset/images/logo_bgdark.png" alt="Logo d'Anaïs PERIGNY" class="navbar__logo">
+            <h1 class="navbar__title">Pomodoro</h1>
+            <img class="navbar__settings" src="./asset/images/icone_settings.png" alt="Paramètrages" title="Paramètres">
+        </nav>
+    </header>
+    <main>
+        <button class="help">?</button>
+
+        <section class="timer">
+            <div class="timer__btns">
+                <button>Temps</button>
+                <button>Pause</button>
+            </div>
+            <div class="timer__time">
+                25 : 00
+            </div>
+            <button class="timer__start">Démarrer</button>
+        </section>
+
+        <article class="task">
+            <h3 class="task__title">Tâches</h3>
+            <div class="task__element">
+                <p class="task__element--name selected">Exemple de tâche n°1</p>
+                <p class="task__element--count">1/3</p>
+            </div>
+            <div class="task__element">
+                <p class="task__element--name">Exemple de tâche n°2</p>
+                <p class="task__element--count">4/3</p>
+            </div>
+            <div class="task__element">
+                <p class="task__element--name closed">Exemple de tâche n°3</p>
+                <p class="task__element--count">1/1</p>
+            </div>
+            <div class="task__add">
+                
+                <p class="task__add--new">+</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Tâches à faire : <span id="totalTodos">2/3</span></p>
+        <p>Tâches terminées : <span id="totalClosed">1/3</span></p>
+        <p>Total temps : <span id="totalTime"></span>3h45</p>
+    </footer>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="./asset/script.js"></script>
+</body>
+</html>
